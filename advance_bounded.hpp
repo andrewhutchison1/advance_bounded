@@ -3,6 +3,8 @@
 
 #include <iterator>
 
+namespace ah1 {
+
 // Advances an iterator n places, not exceeding last (if n is positive) or
 // first (if n is negative). If n is negative, then InIt must meet the
 // requirements of BidirectionalIterator. Additionally, first must be
@@ -23,5 +25,7 @@ inline void advance_bounded(InIt first, InIt last, InIt& it, Distance n)
 		std::advance(it, std::max(static_cast<comp_type>(n), bound));
 	}
 }
+
+} // namespace ah1
 
 #endif // ADVANCE_BOUNDED_HPP_

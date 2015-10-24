@@ -5,6 +5,8 @@
 
 #include "../advance_bounded.hpp"
 
+using namespace ah1;
+
 // This test ensure that the bounding works as expected (i.e. if the
 // distance exceeds the lower bound, the lower bound is returned)
 void test_backward_bound()

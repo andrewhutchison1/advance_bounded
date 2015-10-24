@@ -5,6 +5,8 @@
 
 #include "../advance_bounded.hpp"
 
+using namespace ah1;
+
 // This test ensures that the bounding works as expected
 void test_forward_bound()
 {
