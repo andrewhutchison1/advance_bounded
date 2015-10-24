@@ -57,3 +57,7 @@ check. Importantly, this means that if `iterator` satisfies
 The most obvious use case is for `first` and `last` to be the beginning
 and end (respectively) of the range you are traversing. However, they can
 be any valid range of a container.
+
+I was motivated to implement this after encountering
+[this](http://stackoverflow.com/questions/5916239/) question on
+StackOverflow.
