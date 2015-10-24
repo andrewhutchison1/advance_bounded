@@ -30,10 +30,12 @@ auto it = s.begin();
 advance_bounded(s.begin(), s.end(), it, 5);
 
 // At this point, it points to '5'.
+assert(*it == '5');
 
 advance_bounded(s.begin(), s.end(), it, 100000);
 
 // At this point, it is equal to s.end()
+assert(it == s.end());
 ```
 
 #### Installation
