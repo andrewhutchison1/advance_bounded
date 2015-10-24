@@ -8,7 +8,9 @@ computation, but we want to keep it in a specific subrange of a
 container (such as one returned from `partial_sort`).
 
 `advance_bounded`, as its name implies, is a simple utility to advance an
-iterator without exceeding given upper and lower bounds.
+iterator without exceeding given upper and lower bounds. `advance_bounded`
+is a single-file header-only library that depends only on the STL (namely
+`<iterator>`)
 
 #### Usage
 
@@ -37,7 +39,7 @@ advance_bounded(s.begin(), s.end(), it, 100000);
 #### Installation
 
 Just drop `advance_bounded.hpp` anywhere on your project's include path
-and include it.
+and `#include` it.
 
 #### Notes
 
